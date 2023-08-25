@@ -9,7 +9,6 @@ import ru.kram.springcourse.models.Book;
 import ru.kram.springcourse.models.Person;
 import ru.kram.springcourse.repos.PeopleRepository;
 
-import javax.persistence.EntityManager;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;

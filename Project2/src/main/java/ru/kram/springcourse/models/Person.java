@@ -16,7 +16,7 @@ public class Person {
     @NotEmpty(message = "ФИО не может быть пустым")
     @Column(name = "fio")
     @Size(min = 2, max = 100, message = "ФИО должно быть длинною от 2 до 100 символов")
-    @Pattern(regexp = "[А-ЯЁ][а-яё]+ [А-ЯЁ][а-яё]+ [А-ЯЁ][а-яё]+",
+    @Pattern(regexp = "([А-ЯЁ][а-яё]+[\\-\\s]?){3,}",
             message = "Ваши ФИО должны быть в формате: Фамилия Имя Отчество")
     private String fio;
 
